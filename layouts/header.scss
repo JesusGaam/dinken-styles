@@ -1,0 +1,76 @@
+header.header{
+    position: relative;
+    background-size:cover;
+	background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    text-align: left;
+
+    .background-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index: -1;
+    }
+    > .row{
+        @media screen and (max-width: $break-sm){
+            padding-top: 160px;
+        }
+    }
+    &:not(.adjust){
+        > .row{
+            @media screen and (min-width: $break-sm + 1px){
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+        }
+    }
+    &.adjust{
+        > .row{
+            @include widthFill();
+        }
+    }
+    h1, .h1, h2, .h2, h3, .h3, a{
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    }
+    h1, .h1{
+        line-height: 1.25;
+        letter-spacing: 0.24px;
+
+        + *:not(b):not(i):not(span):not(a):not(blockquote):not(cite){
+            padding-top: 8px;
+        }
+    }
+
+    h2, .h2, h3, .h3{
+        font-weight: normal;
+        + *:not(b):not(i):not(span):not(a):not(blockquote):not(cite){
+            padding-top: 16px;
+        }
+    }
+    h2, .h2{
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+    }
+    h3, .h3{
+        line-height: 1.4;
+        letter-spacing: normal;
+    
+    }
+    .green{
+        color: get-color("grass");
+    }
+    .cta{
+        a{
+            font-size: 20px;
+        }
+    }
+    @media screen and (min-width: $break-sm + 1){
+    }
+    @media screen and (max-width: $break-sm){
+    }
+}

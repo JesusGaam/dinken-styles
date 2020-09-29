@@ -1,0 +1,47 @@
+nav, header, section, footer{
+    &.container{
+        overflow: hidden;
+
+         > div{
+            //width: 100%;
+            max-width: $break-lg;
+            margin: 0 auto;
+        }
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media screen and (max-width: $break-sm){
+            &:not(nav){
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+
+        @media screen and (min-width: $break-sm + 1px){
+            &.adjust{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                height:100vh;
+                height:calc(100vh - 48px);
+            }
+        }
+    }
+}
+footer, section{
+    &:not(.adjust){
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+@media screen and (max-width: $break-sm){
+    .desktop{
+        display: none !important;
+    }
+}
+@media screen and (min-width: $break-sm + 1px){
+    .mobile{
+        display: none !important;
+    }
+}

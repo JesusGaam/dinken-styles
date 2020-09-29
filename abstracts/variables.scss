@@ -1,0 +1,49 @@
+$primary-font: 'Roboto', sans-serif;
+$secundary-font: 'Zilla Slab', sans-serif;
+$colors:(
+  'green':(
+    'base': #389239,
+    'medium': #65a966,
+    'light':#b6d5b6
+  ),
+  'grass':(
+    'base': #d0dd28, 
+    'medium': #d9e45a,
+    'light':#edf1b0
+  ),
+  'turquoise':(
+    'base': #85d1d4,
+    'medium': #9edadd,
+    'light':#d0edee
+  ),
+  'sky':(
+    'base': #c7e8e8,
+    'medium': #d2eded,
+    'light':#e9f5f5
+  ),
+  'orange':(
+    'base': #f26647,
+    'medium': #f58770,
+    'light':#fac5bb
+  ),
+  'black':(
+    'base': #383b42,
+    'medium': #65676c,
+    'light':#b6b7b9
+  ),
+  'white':(
+    'base': #ffffff
+  ), 
+  'text':(
+    'base': #383b42,
+    'legal': #b0b0b2,
+    'highlight': #383b42
+  ), 
+  'background':(
+    'base': #f7f8fa
+  )
+);
+$break-xs: 414px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;

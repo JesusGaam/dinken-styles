@@ -1,0 +1,275 @@
+//@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,600|Roboto:400,700&display=swap');
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(https://fonts.gstatic.com/s/zillaslab/v5/dFa6ZfeM_74wlPZtksIFajo6_V6LVlA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Zilla Slab SemiBold'), local('ZillaSlab-SemiBold'), url(https://fonts.gstatic.com/s/zillaslab/v5/dFa5ZfeM_74wlPZtksIFYuUe6HOpW3pwfa0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body{
+    font-size: 18px;
+    font-family: $primary-font;
+    color: get-color('text');
+    padding-top: 48px;//110px;
+}
+
+.secundary-font{
+    font-family: $secundary-font;
+}
+
+.jump{
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    &:focus{
+        outline: none;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+    &:not(h3):not(.h3){
+        font-family: $secundary-font;
+    }
+    color: get-color('text');
+
+    + *:not(b):not(i):not(span):not(a):not(blockquote):not(cite){
+        padding-top: 24px;
+    }
+}
+
+h1, .h1{
+    font-family: $secundary-font;
+    font-size: 80px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+
+    @media screen and (max-width: $break-sm){
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: $break-sm) and (min-width: $break-xs + 1px){
+        font-size: 32px;
+    }
+}
+
+h2, .h2{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+
+    @media screen and (max-width: $break-sm){
+        font-size:24px;
+    }
+}
+
+h3, .h3{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 0.25px;
+
+    @media screen and (max-width: $break-sm){
+        font-size:20px;
+    }
+}
+
+p, b, i, ul, ol, li, blockquote, cite{
+    line-height: 1.4em;
+
+    + h1, + .h1, + h2, + .h2, + h3, + .h3{
+        padding-top: 32px;
+    }
+
+    + :not(b):not(i):not(span):not(a):not(blockquote):not(cite):not(h1):not(h2):not(h3):not(.h1):not(.h2):not(.h3){
+        padding-top: 16px;
+    }
+
+    @media screen and (max-width: $break-xs){
+        font-size: 16px;
+    }
+
+    &.legales{
+        font-family: $secundary-font;
+        font-size:12px;
+        letter-spacing: 0.4px;
+        color: get-color('black', 'medium');
+
+        .cat, .gat, .tasa{            
+            font-weight: bold;
+            letter-spacing: 0.15px;
+            color: get-color('text', 'highlight');
+
+            &:not(.cat){
+                font-size: 18px;
+            }
+        }
+
+        .cat{
+            font-size: 24px;
+        }
+        b{
+            color: get-color('black', 'medium');
+            font-size: 14px;
+        }
+        a{
+            color: get-color('text', 'highlight');
+        }
+    }
+}
+
+ol, ul{
+    &:not(.bullet):not(.decimal):not(.roman){
+        list-style: none;
+        li{
+            //padding-left: 24px;
+            @media screen and (max-width: $break-sm){
+                //padding-left: 16px;
+            }
+        }
+    }
+    &.decimal, &.bullet, &.roman{
+        padding-left: 38px;
+        li{
+            padding-left: 0px;
+        }
+    }
+    &.bullet{
+        list-style: disc;
+    }
+    &.decimal{
+        list-style: decimal;
+    }
+    &.roman{
+        list-style: lower-roman;
+    }
+}
+
+a{
+    &:link, &:visited{
+        color: get-color('green');
+    }
+
+    &:hover, &:active{
+        text-decoration: none;
+    }
+}
+
+table{
+    font-family: $secundary-font;
+    color: get-color("text");
+
+    border-collapse: collapse;
+    border-spacing:  0px;
+    border: solid 1px get-color("black", "light");
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    word-break: break-word;
+    word-wrap: break-word;
+
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+
+    @media screen and (max-width: $break-sm){
+        width: 100%;
+    }
+
+    + table{
+        margin-top: 16px;
+    }
+
+    thead{
+        tr{
+            th{
+                padding: 6px 12px;
+
+                font-family: $primary-font;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: left;
+                line-height: 1.1em;
+                letter-spacing: normal;
+
+                @media screen and (min-width: $break-xs + 1px) and (max-width: $break-sm){
+                    font-size: 16px;
+                }
+                @media screen and (max-width: $break-xs){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            &:not(:nth-last-child(-n+1)){
+                border-bottom: solid 0.5px get-color("black", "light");
+            }
+
+            td{
+                padding: 6px 8px;
+                letter-spacing: 0.15px;
+                font-size: 16px;
+                
+                &.bold{
+                    font-weight: bold;
+                }
+
+                &.right{
+                    text-align: right;
+                }
+
+                &.center{
+                    text-align: center;
+                }
+
+                @media screen and (max-width: $break-sm){
+                    width: 50%;
+                }
+                @media screen and (min-width: $break-xs + 1px) and (max-width: $break-sm){
+                    font-size: 14px;
+                }
+                @media screen and (max-width: $break-xs){
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}
