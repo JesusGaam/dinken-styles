@@ -1,12 +1,9 @@
 header.header{
     position: relative;
-    background-size:cover;
-	background-position: center;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     text-align: left;
-
+    background-position: center;
+    @include background-size(cover);
+    
     .background-image{
         position: absolute;
         left: 0;
@@ -34,40 +31,26 @@ header.header{
             @include widthFill();
         }
     }
-    h1, .h1, h2, .h2, h3, .h3, a{
-        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    h1, .h1, h2, .h2, h3, .h3{
+        text-shadow: $text-shadow;
     }
     h1, .h1{
-        line-height: 1.25;
-        letter-spacing: 0.24px;
-
         + *:not(b):not(i):not(span):not(a):not(blockquote):not(cite){
-            padding-top: 8px;
+            padding-top: $spacing-8;
         }
     }
 
     h2, .h2, h3, .h3{
-        font-weight: normal;
+        font-weight: $font-weight-bold;
+        
         + *:not(b):not(i):not(span):not(a):not(blockquote):not(cite){
-            padding-top: 16px;
+            padding-top: $spacing-16;
         }
     }
     h2, .h2{
-        line-height: 1.33;
-        letter-spacing: 0.15px;
+
     }
     h3, .h3{
-        line-height: 1.4;
-        letter-spacing: normal;
-    
-    }
-    .green{
-        color: get-color("grass");
-    }
-    .cta{
-        a{
-            font-size: 20px;
-        }
     }
     @media screen and (min-width: $break-sm + 1){
     }

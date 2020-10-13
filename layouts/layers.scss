@@ -3,17 +3,16 @@ nav, header, section, footer{
         overflow: hidden;
 
          > div{
-            //width: 100%;
             max-width: $break-lg;
             margin: 0 auto;
         }
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: $spacing-20;
+        padding-right: $spacing-20;
 
         @media screen and (max-width: $break-sm){
             &:not(nav){
-                padding-top: 40px;
-                padding-bottom: 40px;
+                padding-top: $spacing-40;
+                padding-bottom: $spacing-40;
             }
         }
 
@@ -31,8 +30,8 @@ nav, header, section, footer{
 }
 footer, section{
     &:not(.adjust){
-        padding-top: 64px;
-        padding-bottom: 64px;
+        padding-top: $spacing-64;
+        padding-bottom: $spacing-64;
     }
 }
 @media screen and (max-width: $break-sm){

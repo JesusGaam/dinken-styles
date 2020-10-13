@@ -1,0 +1,145 @@
+//Brand Color
+$brand-primary: #389239;
+$brand-primary-80: #1589ee;
+$brand-primary-60: #1589ee;
+$brand-primary-40: #1589ee;
+$brand-primary-20: #1589ee;
+$brand-primary-active: #007add;
+
+$brand-secundary: #d0dd28;
+$brand-secundary-80: #1589ee;
+$brand-secundary-60: #1589ee;
+$brand-secundary-40: #1589ee;
+$brand-secundary-20: #1589ee;
+
+$brand-tertiary: #414047;
+$brand-tertiary-80: #1589ee;
+$brand-tertiary-60: #1589ee;
+$brand-tertiary-40: #1589ee;
+$brand-tertiary-20: #1589ee;
+
+
+//Background & Border
+$color-background: #ffffff;
+$color-background-light: #f3f2f2;
+$color-background-dark: #1a1b1e;
+$color-background-header: #ffffff;
+
+
+//Text Color
+$color-text: #383b42;
+$color-text-legal: #65676c;
+$color-text-label: $color-text;
+$color-text-helper: $color-text-legal;
+$color-text-placeholder: #b6b7b9;
+$color-text-required: #c23934;
+$color-text-success: #027e46;
+$color-text-warning: #ffb75d;
+$color-text-error: #f26647;
+
+
+//Link Color
+$color-text-link: $brand-primary;
+$color-text-link-hover: $brand-primary;
+
+//Button Color
+$color-background-button: $brand-primary;
+$color-background-button-active: $brand-primary-60;
+$color-text-button: #ffffff;
+$color-text-button-active: #ffffff;
+
+$color-background-button-secundary: #ffffff;
+$color-background-button-secundary-active: #ffffff;
+$color-text-button-secundary: #ffffff;
+$color-text-button-secundary-active: #ffffff;
+
+
+//Font
+$font-family: 'Roboto', sans-serif;
+$font-family-secundary: 'Zilla Slab', sans-serif;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+
+//Font Size
+$font-size-h1: 54px;
+$font-size-h1-sm: 32px;
+$font-size-h1-xs: 28px;
+
+$font-size-h2: 48px;
+$font-size-h2-sm: 24px;
+$font-size-h2-xs: 24px;
+
+$font-size-h3: 32px;
+$font-size-h3-sm: 20px;
+$font-size-h3-xs: 20px;
+
+$font-size-text: 18px;
+
+
+//Line Height
+$line-height-heading: 1.25;
+$line-height-text: 1.5;
+
+
+//Spacing
+$spacing-0: 0;
+$spacing-6: 6px;
+$spacing-8: 8px;
+$spacing-12: 12px;
+$spacing-16: 16px;
+$spacing-20: 20px;
+$spacing-24: 24px;
+$spacing-32: 32px;
+$spacing-40: 40px;
+$spacing-64: 64px;
+
+
+//Border
+$border-radius-small: 2px;
+$border-radius-medium: 4px;
+$border-radius-large: 8px;
+$border-radius-circle: 50%;
+
+
+//Icon Sizing
+$icon-size-small: 16px;
+$icon-size-medium: 24px;
+$icon-size-large: 32px;
+
+
+//Shadow
+$text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+$card-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+$header-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+
+
+//Time
+$duration-instantly: 0s;
+$duration-immediately: 50ms;
+$duration-quickly: 100ms;
+$duration-promptly: 200ms;
+$duration-slowly: 400ms;
+
+
+//Break Points & Media Queries
+$break-xs: 414px; 
+$break-sm: 768px; 
+$break-md: 992px; 
+$break-lg: 1200px;
+
+$media-query-xs: only screen and (max-width: $break-xs);
+$media-query-sm: only screen and (max-width: $break-sm);
+$media-query-sm-only: only screen and (min-width: $break-xs + 1px) and (max-width: $break-sm);
+$media-query-md: only screen and (max-width: $break-md);
+$media-query-md-only: only screen and (min-width: $break-sm + 1px) and (max-width: $break-md);
+$media-query-lg: only screen and (min-width: $break-md);
+
+//Z-index
+$z-index-deepdive: -99999;
+$z-index-default: 1;
+$z-index-sticky:100;
+$z-index-modal: 9000;
+
+//BORDER
