@@ -106,3 +106,67 @@
   -o-background-size: $options;
   background-size: $options;
 }
+
+
+// MEDIA QUERIES
+
+@mixin media-query-xs {
+  // SOLO TELEFONOS
+  @media screen and (max-width: $break-xs){
+    @content;
+  }
+}
+@mixin media-query-xs-mayor {
+  // MAYOR A TELEFONOS
+  @media screen and (min-width: $break-xs + 1px){
+    @content;
+  }
+}
+
+
+@mixin media-query-sm {
+  // TELEFONOS Y TABLETS
+  @media screen and (max-width: $break-sm){
+    @content;
+  }
+}
+@mixin media-query-sm-only {
+  // SOLO TABLETS
+  @media screen and (min-width: $break-xs + 1px) and (max-width: $break-sm){
+    @content;
+  }
+}
+@mixin media-query-sm-mayor {
+  // MAJOR A TABLETS
+  @media screen and (min-width: $break-sm + 1px){
+    @content;
+  }
+}
+
+
+@mixin media-query-md {
+  // TABLETS MEDIANAS, TABLETS Y TELEFONOS
+  @media screen and (max-width: $break-md){
+    @content;
+  }
+}
+@mixin media-query-md-only {
+  // SOLO TABLETS MEDIANAS
+  @media screen and (min-width: $break-sm + 1px) and (max-width: $break-md){
+    @content;
+  }
+}
+@mixin media-query-md-mayor {
+  // MAYOR A TABLETS MEDIANAS
+  @media screen and (min-width: $break-md + 1px){
+    @content;
+  }
+}
+
+
+@mixin media-query-lg {
+  // SOLO DESKTOP
+  @media screen and (min-width: $break-lg) {
+    @content;
+  }
+}

@@ -39,10 +39,10 @@ h1, .h1{
     line-height: $line-height-heading;
     letter-spacing: -1px;
 
-    @media screen and (max-width: $break-sm) and (min-width: $break-xs + 1px){
+    @include media-query-sm-only{
         font-size: $font-size-h1-sm;
     }
-    @media screen and (max-width: $break-sm){
+    @include media-query-sm{
         font-size: $font-size-h1-xs;
     }
 }
@@ -53,10 +53,10 @@ h2, .h2{
     line-height: $line-height-heading;
     letter-spacing: 0.2px;
 
-    @media screen and (max-width: $break-sm) and (min-width: $break-xs + 1px){
+    @include media-query-sm-only{
         font-size: $font-size-h2-sm;
     }
-    @media screen and (max-width: $break-sm){
+    @include media-query-sm{
         font-size: $font-size-h2-xs;
     }
 }
@@ -67,10 +67,10 @@ h3, .h3{
     line-height: $line-height-heading;
     letter-spacing: 0.25px;
 
-    @media screen and (max-width: $break-sm) and (min-width: $break-xs + 1px){
+    @include media-query-sm-only{
         font-size: $font-size-h3-sm;
     }
-    @media screen and (max-width: $break-sm){
+    @include media-query-sm{
         font-size: $font-size-h3-xs;
     }
 }
@@ -86,7 +86,7 @@ p, b, i, ul, ol, li, blockquote, cite{
         padding-top: $spacing-16;
     }
 
-    @media screen and (max-width: $break-xs){
+    @include media-query-xs{
         font-size: $font-size-text - 2px;
     }
 
@@ -124,7 +124,7 @@ ol, ul{
         list-style: none;
         li{
             //padding-left: $spacing-24;
-            @media screen and (max-width: $break-sm){
+            @include media-query-sm{
                 //padding-left: $spacing-16;
             }
         }
@@ -171,7 +171,7 @@ table{
     @include border-radius($border-radius-small);
     @include widthFill();
 
-    @media screen and (max-width: $break-sm){
+    @include media-query-sm{
         width: 100%;
     }
 
@@ -191,10 +191,10 @@ table{
                 line-height: $line-height-text;
                 letter-spacing: normal;
 
-                @media screen and (min-width: $break-xs + 1px) and (max-width: $break-sm){
-                    font-size:  $font-size-text - 2px;
+                @include media-query-sm-only{
+                    font-size: $font-size-text - 2px;
                 }
-                @media screen and (max-width: $break-xs){
+                @include media-query-xs{
                     font-size: $font-size-text - 4px;
                 }
             }
@@ -224,13 +224,13 @@ table{
                     text-align: center;
                 }
 
-                @media screen and (max-width: $break-sm){
+                @include media-query-sm{
                     width: 50%;
                 }
-                @media screen and (min-width: $break-xs + 1px) and (max-width: $break-sm){
+                @include media-query-sm-only{
                     font-size: $font-size-text - 4px;
                 }
-                @media screen and (max-width: $break-xs){
+                @include media-query-xs{
                     font-size: $font-size-text - 6px;
                 }
             }

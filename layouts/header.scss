@@ -14,13 +14,13 @@ header.header{
         z-index: -1;
     }
     > .row{
-        @media screen and (max-width: $break-sm){
+        @include media-query-sm{
             padding-top: 160px;
         }
     }
     &:not(.adjust){
         > .row{
-            @media screen and (min-width: $break-sm + 1px){
+            @include media-query-sm-mayor{
                 padding-top: 80px;
                 padding-bottom: 80px;
             }
@@ -51,9 +51,5 @@ header.header{
 
     }
     h3, .h3{
-    }
-    @media screen and (min-width: $break-sm + 1){
-    }
-    @media screen and (max-width: $break-sm){
     }
 }

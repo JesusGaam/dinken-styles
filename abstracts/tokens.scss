@@ -129,12 +129,6 @@ $break-sm: 768px;
 $break-md: 992px; 
 $break-lg: 1200px;
 
-$media-query-xs: only screen and (max-width: $break-xs);
-$media-query-sm: only screen and (max-width: $break-sm);
-$media-query-sm-only: only screen and (min-width: $break-xs + 1px) and (max-width: $break-sm);
-$media-query-md: only screen and (max-width: $break-md);
-$media-query-md-only: only screen and (min-width: $break-sm + 1px) and (max-width: $break-md);
-$media-query-lg: only screen and (min-width: $break-md);
 
 //Z-index
 $z-index-deepdive: -99999;

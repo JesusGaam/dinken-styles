@@ -21,7 +21,7 @@
     letter-spacing: 0.16px;
     color: $color-text-label;
 
-    @media screen and (max-width: $break-sm) {
+    @include media-query-sm {
       font-size: $font-size-text;
       font-weight: $font-weight-bold;
       letter-spacing: 0.13px;
@@ -52,7 +52,7 @@
       margin-top: $spacing-8;
     }
     &.inline {
-      @media screen and (max-width: $break-sm) {
+      @include media-query-sm {
         margin-top: $spacing-8;
       }
     }
@@ -62,7 +62,7 @@
   &.button-link.inline {
     + .button-input.inline,
     + .button-link.inline {
-      @media screen and (min-width: $break-sm + 1px) {
+      @include media-query-sm-mayor{
         margin-left: $spacing-16;
       }
     }

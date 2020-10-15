@@ -42,14 +42,14 @@
         vertical-align: top;
         box-sizing: border-box;
 
-        @media screen and (max-width: 480px){
+        @include media-query-xs{
             &:not(.all-screens) {
                 display: block;
                 width: initial;
             }
         }
 
-        @media screen and (max-width: $break-sm){
+        @include media-query-sm{
             &.all-screens{
                 display: inline-block;
             }
@@ -58,18 +58,20 @@
                 width: initial;
             }
         }
-        @media screen and (min-width: 481px) {
+
+        @include media-query-xs-mayor{
             &.until-medium {
                 display: inline-block;
             }
-            @media screen and (max-width: $break-sm) {
+
+            @include media-query-sm {
                 &:not(.all-screens):not(.until-medium){
                     display: block;
                     width: initial;
                 }
             }
         }
-        @media screen and (min-width: $break-sm + 1px){
+        @include media-query-sm-mayor{
             display: inline-block;
         }
     }

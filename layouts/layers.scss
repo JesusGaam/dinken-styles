@@ -9,14 +9,15 @@ nav, header, section, footer{
         padding-left: $spacing-20;
         padding-right: $spacing-20;
 
-        @media screen and (max-width: $break-sm){
+        
+        @include media-query-sm{
             &:not(nav){
                 padding-top: $spacing-40;
                 padding-bottom: $spacing-40;
             }
         }
 
-        @media screen and (min-width: $break-sm + 1px){
+        @include media-query-sm-mayor{
             &.adjust{
                 display: flex;
                 flex-direction: column;
@@ -34,12 +35,12 @@ footer, section{
         padding-bottom: $spacing-64;
     }
 }
-@media screen and (max-width: $break-sm){
+@include media-query-sm{
     .desktop{
         display: none !important;
     }
 }
-@media screen and (min-width: $break-sm + 1px){
+@include media-query-sm-mayor{
     .mobile{
         display: none !important;
     }
