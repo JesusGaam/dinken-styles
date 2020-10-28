@@ -42,6 +42,7 @@ $color-text-error: #f26647;
 $color-text-link: $brand-primary;
 $color-text-link-hover: $brand-primary;
 
+
 //Button Color
 $color-background-button: $brand-primary;
 $color-background-button-active: $brand-primary-60;
@@ -136,4 +137,19 @@ $z-index-default: 1;
 $z-index-sticky:100;
 $z-index-modal: 9000;
 
-//BORDER
+
+//NAVBAR
+$navbar-height: 70px;
+$navbar-brand-text-color: $brand-primary;
+$navbar-brand-text-size: 33px;
+$navbar-brand-text-font-weigth: $font-weight-bold;
+$navbar-menu-text-color: $brand-primary;
+$navbar-hamburger-menu-color: $brand-primary;
+$navbar-background: #000000;
+
+// NAVBAR MOBILE MENU
+$navbar-menu-background: $color-background-light;
+$navbar-menu-text-line-height: 62px;
+$navbar-menu-text-font-weigth: $font-weight-bold;
+$navbar-menu-text-align: center;
+$navbar-menu-text-border-bottom: none;
