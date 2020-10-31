@@ -1,4 +1,13 @@
 .form-element {
+  .input{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lighten($color-text-label, 20%);
+    background-color: #ffffff;
+    @include transition(all $duration-promptly);
+    @include border-radius($border-radius-large);
+    @include box-shadow($box-shadow);
+  }
   &.has-error {
     .helper-text,
     input[type="text"] {
@@ -10,7 +19,8 @@
   }
   &:not(.has-error) {
     .input:focus-within {
-      border: solid 1px $color-text-success;
+      border-color: $brand-primary;
+      @include box-shadow($box-shadow-active);
     }
   }
   .label {
@@ -27,7 +37,7 @@
       letter-spacing: 0.13px;
     }
 
-    span.optional{
+    span.required{
       font-family: $secundary-font;
       font-size: $font-size-text - 2px;
       letter-spacing: 0.16px;
@@ -87,6 +97,8 @@
       padding-top: $spacing-12;
       padding-left: 2px;
       padding-bottom: $spacing-12;
+
+      background-color: transparent;
 
       border: none;
 

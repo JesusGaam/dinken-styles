@@ -1,0 +1,95 @@
+
+.button-input, .button-link{
+    a{
+      display:block;
+      text-align: center;
+    }
+    input, a {
+      font-weight: $font-weight-bold;
+      line-height: $line-height-text;
+      letter-spacing: 0.5px;
+  
+      color: #ffffff;
+      border-width: 2px;
+      border-style: solid;
+      padding: 8px 14px;
+      border-radius: $border-radius-large;
+  
+      text-decoration: none;
+  
+      @include widthFill();
+      @include box-shadow($box-shadow);
+      @include transition(all $duration-promptly);
+  
+      @media screen and (max-width: $break-xs) {
+        font-size: $font-size-text - 2px;
+      }
+  
+      &:hover,
+      &:active{
+        text-shadow:$text-shadow;
+        @include box-shadow($box-shadow-active);
+        @include transform(translateY(-3px));
+      }
+    }
+  
+    @media screen and (min-width: $break-sm + 1px) {
+      &.inline {
+        display: inline-block;
+        width: 240px;
+      }
+    }
+  
+    &:not(.secundary):not(.secundary-stroke):not(.secundary-header) {
+      input, a{
+        border-color: $brand-primary;
+        background-color: $brand-primary;
+    
+        &:hover,
+        &:active{
+          border-color: $brand-primary-5;
+          background-color: $brand-primary-5;
+        }
+      }
+    }
+  
+    &.secundary {
+      input, a{
+        border-color: $brand-secundary;
+        background-color: $brand-secundary;
+    
+        &:hover,
+        &:active{
+          border-color: $brand-secundary-5;
+          background-color: $brand-secundary-5;
+        }
+      }
+    }
+  
+    &.secundary-stroke {
+      input, a {
+        color: $brand-secundary;
+        border-color: $brand-secundary;
+        background-color: transparent;
+      }
+    }
+  
+    &.secundary-header {
+      input, a{
+        border-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  
+    &.secundary-header,
+    &.secundary-stroke{
+      input, a{
+        &:hover,
+        &:active{
+          color: #ffffff;
+          border-color: $brand-secundary-5;
+          background-color: $brand-secundary-5;
+        }
+      }
+    }  
+  }

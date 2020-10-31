@@ -1,22 +1,31 @@
 //Brand Color
-$brand-primary: #389239;
-$brand-primary-80: #1589ee;
-$brand-primary-60: #1589ee;
-$brand-primary-40: #1589ee;
-$brand-primary-20: #1589ee;
-$brand-primary-active: #007add;
+$brand-primary: #1da1f5;
+$brand-primary-5:  lighten($brand-primary, 5%);
+$brand-primary-10: lighten($brand-primary, 10%);
+$brand-primary-15: lighten($brand-primary, 15%);
+$brand-primary-20: lighten($brand-primary, 20%);
+$brand-primary-40: lighten($brand-primary, 40%);
 
-$brand-secundary: #d0dd28;
-$brand-secundary-80: #1589ee;
-$brand-secundary-60: #1589ee;
-$brand-secundary-40: #1589ee;
-$brand-secundary-20: #1589ee;
+$brand-secundary: #ff4d00;
+$brand-secundary-5:lighten($brand-secundary, 5%);;
+$brand-secundary-10:lighten($brand-secundary, 10%);
+$brand-secundary-15:lighten($brand-secundary, 15%);
+$brand-secundary-20:lighten($brand-secundary, 20%);
+$brand-secundary-40:lighten($brand-secundary, 40%);
 
-$brand-tertiary: #414047;
-$brand-tertiary-80: #1589ee;
-$brand-tertiary-60: #1589ee;
-$brand-tertiary-40: #1589ee;
-$brand-tertiary-20: #1589ee;
+$brand-tertiary: #8039da;
+$brand-tertiary-5:lighten($brand-tertiary, 5%);
+$brand-tertiary-10:lighten($brand-tertiary, 10%);
+$brand-tertiary-15:lighten($brand-tertiary, 15%);
+$brand-tertiary-20:lighten($brand-tertiary, 20%);
+$brand-tertiary-40:lighten($brand-tertiary, 40%);
+
+
+//Border
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 24px;
+$border-radius-circle: 50%;
 
 
 //Background & Border
@@ -43,9 +52,18 @@ $color-text-link: $brand-primary;
 $color-text-link-hover: $brand-primary;
 
 
-//Button Color
+//MENU 
+$menu-border-color: #e3e3e3;
+$menu-title-background-color: #f3f3f3;
+$menu-link-hover-background-color: #fafafa;
+
+
+//FORM INPUTS
+$border-radius-input: $border-radius-large;
+$border-color-input: $menu-border-color;
+
 $color-background-button: $brand-primary;
-$color-background-button-active: $brand-primary-60;
+$color-background-button-active: $brand-primary-20;
 $color-text-button: #ffffff;
 $color-text-button-active: #ffffff;
 
@@ -97,13 +115,6 @@ $spacing-40: 40px;
 $spacing-64: 64px;
 
 
-//Border
-$border-radius-small: 2px;
-$border-radius-medium: 4px;
-$border-radius-large: 8px;
-$border-radius-circle: 50%;
-
-
 //Icon Sizing
 $icon-size-small: 16px;
 $icon-size-medium: 24px;
@@ -111,8 +122,9 @@ $icon-size-large: 32px;
 
 
 //Shadow
-$text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
-$card-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+$text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.10);
+$box-shadow: 0 0.125rem 0.25rem 0 rgba(31, 45, 65, 0.2);
+$box-shadow-active: 0 0.25rem 1rem 0 rgba(31, 45, 65, 0.25);
 $header-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 
 
@@ -147,9 +159,13 @@ $navbar-menu-text-color: $brand-primary;
 $navbar-hamburger-menu-color: $brand-primary;
 $navbar-background: #000000;
 
-// NAVBAR MOBILE MENU
+//NAVBAR MOBILE MENU
 $navbar-menu-background: $color-background-light;
 $navbar-menu-text-line-height: 62px;
 $navbar-menu-text-font-weigth: $font-weight-bold;
 $navbar-menu-text-align: center;
 $navbar-menu-text-border-bottom: none;
+
+
+
+
